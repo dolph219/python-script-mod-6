@@ -1,0 +1,40 @@
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> c= "cats"
+>>> d= "dogs"
+>>> s= "its raining"
+>>> print (s + c + "and" + d)
+its rainingcatsanddogs
+>>> print ( s ' + c ' + '"and" + 'd)
+  File "<stdin>", line 1
+    print ( s ' + c ' + '"and" + 'd)
+              ^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> (s+" "
+...
+...
+...  c= "cats"
+  File "<stdin>", line 1
+    (s+" "
+     ^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> >>> d= "dogs"
+  File "<stdin>", line 1
+    >>> d= "dogs"
+    ^^
+SyntaxError: invalid syntax
+>>> >>> s= "its raining"
+  File "<stdin>", line 1
+    >>> s= "its raining"
+    ^^
+SyntaxError: invalid syntax
+>>> c= "cats "
+>>> d= " dogs"
+>>> s= "its raining "
+>>> (s+" " + c + "and" + dogs)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'dogs' is not defined
+>>> (s+" " + c + "and" + d)
+'its raining  cats and dogs'
+>>>
